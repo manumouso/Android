@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Matrices Equivalentes</string>
+    <string name="sistemas_lineales">Sistemas Lineales</string>
+    <string name="matriz">Matriz</string>
+    <string name="a11">a11</string>
+    <string name="a12">a12</string>
+    <string name="b1">b1</string>
+    <string name="a21">a21</string>
+    <string name="a22">a22</string>
+    <string name="b2">b2</string>
+    <string name="matriz_equivalente">Matriz Equivalente</string>
+    <string name="resultado_error">NO puede ingresar solo ceros en la primer columna</string>
+    <string name="matriz_escalonada">Matriz Escalonada Filas</string>
+</resources>

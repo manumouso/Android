@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#BBDEFB">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/sistemas_lineales"
+    android:textSize="40sp"
+    android:background="#90CAF9"/>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="50dp"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="28dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/matriz"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textColor="#0D47A1"
+            />
+
+        <TableRow>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/a11"
+                android:textSize="30sp"
+                android:inputType="numberSigned"
+                android:id="@+id/a11ET"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/a12"
+                android:textSize="30sp"
+                android:inputType="numberSigned"
+                android:id="@+id/a12ET"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/b1"
+                android:textSize="30sp"
+                android:inputType="numberSigned"
+                android:id="@+id/b1ET"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/a21"
+                android:textSize="30sp"
+                android:inputType="numberSigned"
+                android:id="@+id/a21ET"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/a22"
+                android:textSize="30sp"
+                android:inputType="numberSigned"
+                android:id="@+id/a22ET"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/b2"
+                android:textSize="30sp"
+                android:inputType="numberSigned"
+                android:id="@+id/b2ET"
+                />
+        </TableRow>
+
+    </TableLayout>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/matriz_equivalente"
+        android:textSize="18sp"
+        android:background="#107C10"
+        android:textColor="#C8E6C9"
+        android:onClick="seClickeoEquivalente"
+        android:id="@+id/equivalenteBT"/>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="50dp"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="418dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:id="@+id/resultadoTV"
+            android:textColor="#0D47A1"
+            />
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+
+                android:id="@+id/a11TV"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+
+                android:id="@+id/a12TV"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+
+                android:id="@+id/b1TV"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+
+                android:id="@+id/a21TV"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+
+                android:id="@+id/a22TV"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+
+                android:id="@+id/b2TV"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
